@@ -1,0 +1,54 @@
+///////
+//
+// Variables
+//
+///////
+
+$circle-rad: 55vw;
+$circle-grad-two: #fc4a1a;
+$circle-grad-one: #f7b733;
+
+$circle-grad-three: #42275a;
+$circle-grad-four: #734b6d;
+
+
+///////
+//
+// Main
+//
+///////
+
+.circle {
+    height: $circle-rad;
+    width: $circle-rad;
+    max-width: 800px;
+    max-height: 800px;
+
+    border-radius: 100%;
+
+    background: $circle-grad-two; 
+    background: linear-gradient(to top, $circle-grad-one, $circle-grad-two);
+
+    &__one {
+        position: absolute;
+        left: calc(-50vw/2);
+        top: calc(-50vw/5);
+
+        &--color {
+            background: $circle-grad-two; 
+            background: linear-gradient(to top, $circle-grad-one, $circle-grad-two);
+        }
+    }
+
+    &__two {
+        position: absolute;
+        right: calc(-50vw/4);
+        bottom: calc(-50vw/3);
+
+        &--color {
+            background: $circle-grad-four; 
+            background: linear-gradient(to top, $circle-grad-three, $circle-grad-four);
+        }
+    }
+}
+
